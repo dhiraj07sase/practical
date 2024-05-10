@@ -1,0 +1,276 @@
+// style 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: wheat;
+}
+
+.side-menu {
+    position: fixed;
+    background-color: rgb(20, 214, 140);
+    width: 35vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .clg-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(111, 5, 5);
+}
+
+.side-menu li {
+    font-size: 30px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.side-menu li:hover {
+    border-radius: 5px;
+    transform: scale(1.01);
+    box-shadow: 2px 2px 20px black;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 80vw;
+}
+
+.container .header {
+    position: fixed;
+    right: 0;
+    width: 80vw;
+    height: 12vh;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black ;
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header .nav .user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.container .content {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 80vh;
+    background: white;
+}
+
+.container .content .cards {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card1 {
+    width: 250px;
+    background: white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.container .content .container-1 {
+    margin-top: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content-1 .program {
+    min-height: 60vh;
+    flex: 5;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+}
+
+table {
+    padding: 10px;
+}
+
+tr,td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+
+
+///html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SKNCOE</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="clg-name">
+            <h1>SKNCOE</h1>
+        </div>
+
+        <div class="clg-board">
+            <ul>
+                <li>Dashboard</li>
+                <li>Student</li>
+                <li>Teacher</li>
+                <li>Assignment</li>
+                <li>Notes</li>
+                <li>Activites</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Creating Header -->
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="college-name">
+                    <h1>smt. kashibai Navale College of Engineering , Vadgaon Pune</h1>
+                </div>
+
+                <div class="user">
+                    <a href="#" class="btn">Add User</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>3200+</h1>
+                        <h1>Students</h1>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h1>40+</h1>
+                        <h1>Assignment</h1>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h1>200+</h1>
+                        <h1>Teachers</h1>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h1>15/05/2024</h1>
+                        <h1>Exam Date</h1>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="content-1">
+                <div class="program">
+                    <center><h2>Under Graduate Program</h2></center>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Sr. NO.</th>
+                            <th>Programes Offered</th>
+                            <th>Intake</th>
+                        </tr>
+    
+    
+                        <tr>
+                            <td>1</td>
+                            <td>Computer Engineering</td>
+                            <td>300</td>
+                        </tr>
+    
+                        <tr>
+                            <td>2</td>
+                            <td>Information technology Engineering</td>
+                            <td>300</td>
+                        </tr>
+    
+    
+                        <tr>
+                            <td>3</td>
+                            <td>ENTC</td>
+                            <td>120</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Electrical Engineering</td>
+                            <td>180</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Mechanical Engineering</td>
+                            <td>350</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+
+
+    
+</body>
+</html>
+
